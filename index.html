@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .fade-out {
+      transition: opacity 1s;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <div id="object" class="fade-out" style="width: 100px; height: 100px; background-color: red;"></div>
+  <script>
+    document.getElementById("object").addEventListener("click", function () {
+      this.style.opacity = 0;
+    });
+  </script>
+
+  <hr> 
+  <h1>р1</h1>
+  <div id="new-text"></div>
+  <script>
+    document.getElementById("new-text").innerHTML = "текст";
+  </script>
+</body>
+</html>
